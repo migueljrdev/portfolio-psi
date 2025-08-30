@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* input.css */
+.mobile-menu {
+  @apply hidden;
+  /* equivale ao display: none */
+}
+
+.mobile-menu.active {
+  @apply block;
+  /* equivale ao display: block */
+}

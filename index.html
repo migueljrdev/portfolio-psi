@@ -3,12 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Portfólio</title>
+  <title>Portfólio Psi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="dist/css/style.css" />
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="font-lato text-gray-900">
 
-  <div id="header"></div>
+  <!-- Header/Navigation -->
+  <header class="bg-secondary flex-col shadow-md fixed w-full top-0 z-50">
+      <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+          <div class="flex flex-col">
+              <span class="text-xl font-bold text-primary">Dra. Franciely Brito B. Silva </span>
+              <span class="text-sm text-gray-600">Psicóloga Infantil — CRP 00/00000</span>
+          </div>
+          
+          <div class="hidden md:flex space-x-8">
+              <a href="#sobre" class="nav-link">Sobre</a>
+              <a href="#formacao" class="nav-link">Formação e Experiência</a>
+              <a href="#areas" class="nav-link">Áreas</a>
+              <a href="#contato" class="nav-link">Contato</a>
+          </div>
+      </nav>
+      <button class="md:hidden flex gap-3 text-primary mobile-menu-button">
+          <i class="fas fa-bars text-2xl ml-4"></i>
+          <h1 class="text-2xl font-bold uppercase ">Menu</h1>
+      </button>
+      
+      <!-- Mobile Menu -->
+      <div class="mobile-menu hidden bg-white py-4 px-4 shadow-lg">
+          <div class="flex flex-col space-y-4">
+              <a href="#sobre" class="nav-link">Sobre</a>
+              <a href="#formacao" class="nav-link">Formação e Experiência</a>
+              <a href="#areas" class="nav-link">Áreas</a>
+              <a href="#contato" class="nav-link">Contato</a>
+          </div>
+      </div>
+  </header>
 
   <main class="container mx-auto p-6">
     <h1 class="text-3xl font-bold">Bem-vindo ao meu Portfólio</h1>
