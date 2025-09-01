@@ -12,3 +12,7 @@
   @apply block;
   /* equivale ao display: block */
 }
+
+.btn-link-nav {
+  @apply w-3/4 m-auto font-extrabold text-center bg-white border border-primary rounded-full py-2.5;
+}
