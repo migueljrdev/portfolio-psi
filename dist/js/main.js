@@ -1,6 +1,5 @@
 // main.js - script base
 // Menu mobile toggle
-// Menu mobile toggle
 document.addEventListener('DOMContentLoaded', function () {
     const menuButton = document.querySelector('.mobile-menu-button');
     const mobileMenu = document.querySelector('.mobile-menu');
