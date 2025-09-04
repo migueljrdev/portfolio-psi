@@ -23,10 +23,10 @@
           </div>
           
           <div class="hidden md:flex space-x-8">
-              <a href="#sobre" class="nav-link">Sobre</a>
-              <a href="#formacao" class="nav-link">Formação e Experiência</a>
-              <a href="#areas" class="nav-link">Áreas</a>
-              <a href="#contato" class="nav-link">Contato</a>
+              <a href="#sobre" class="btn-link-nav">Sobre</a>
+              <a href="#formacao" class="btn-link-nav">Formação e Experiência</a>
+              <a href="#areas" class="btn-link-nav">Áreas</a>
+              <a href="#contato" class="btn-link-nav">Contato</a>
           </div>
       </nav>
       <button class="md:hidden bg-white rounded-full py-1 px-4 mb-3 ml-3 flex gap-2 text-primary mobile-menu-button">
@@ -37,10 +37,10 @@
       <!-- Mobile Menu -->
       <div class="mobile-menu hidden ml-3 bg-secondary text-primary font-bold uppercase py-1 px-4 shadow-lg">
           <div class="flex flex-col space-y-1">
-              <a href="#sobre" class="nav-link btn-link-nav">Sobre</a>
-              <a href="#formacao" class="nav-link btn-link-nav">Formação e Experiência</a>
-              <a href="#areas" class="nav-link btn-link-nav">Áreas</a>
-              <a href="#contato" class="nav-link btn-link-nav">Contato</a>
+              <a href="#sobre" class="btn-link-nav">Sobre</a>
+              <a href="#formacao" class="btn-link-nav">Formação e Experiência</a>
+              <a href="#areas" class="btn-link-nav">Áreas</a>
+              <a href="#contato" class="btn-link-nav">Contato</a>
           </div>
       </div>
   </header>
@@ -72,7 +72,7 @@
 
 
     <!-- section sobre mim -->
-    <section class="m-4 mt-10" id="#sobre">
+    <section class="m-4 mt-10 scroll-mt-24" id="sobre">
       <h1 class="mb-3 font-playfair font-bold text-3xl leading-normal">Sobre mim</h1>
       <div class="bg-white pb-4 px-6 rounded-md text-center md:flex">
         <img class="w-32 py-4 mx-auto" src="src/img/FOTO AQUI.png" alt="photo-perfil">
@@ -82,7 +82,7 @@
     <!-- fim section sobre mim -->
 
     <!-- section formaçao e experiencia -->
-    <section class="m-4 mt-10" id="#formacao">
+    <section class="m-4 mt-10 scroll-mt-24" id="formacao">
       <!-- div formacao -->
       <div>
         <h1 class="mb-3 font-playfair font-bold text-3xl leading-normal">Formação</h1>
@@ -141,7 +141,7 @@
     <!-- fim section formaçao e experiencia -->
 
     <!-- section areas -->
-    <section class="m-4 mt-10" id="#sobre">
+    <section class="m-4 mt-10 scroll-mt-24" id="areas">
       <h1 class="mb-3 font-playfair font-bold text-3xl leading-normal">Áreas de atuação</h1>
       <!-- grid cards areas-->
       <div>
@@ -187,9 +187,47 @@
     <!-- fim section areas-->
 
     <!-- section contato -->
-    <section class="m-4 mt-10" id="#sobre">
+    <section class="m-4 mt-10 scroll-mt-24" id="contato">
       <h1 class="mb-3 font-playfair font-bold text-3xl leading-normal">Contato</h1>
-      <div class="bg-white pb-4 px-6 rounded-md"> 
+      <div class="bg-white py-4 px-6 rounded-md">
+        <form method="post" id="contact_form" class="space-y-6">
+          <div>
+            <label for="name" class="block text-gray-700 mb-2">Nome*</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              required>
+          </div>
+      
+          <div>
+            <label for="email" class="block text-gray-700 mb-2">E-mail*</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              required>
+          </div>
+      
+          <div>
+            <label for="subject" class="block text-gray-700 mb-2">Assunto*</label>
+            <input type="text" id="subject" name="subject" placeholder="Título da mensagem"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              required>
+          </div>
+      
+          <div>
+            <label for="message" class="block text-gray-700 mb-2">Mensagem*</label>
+            <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              required></textarea>
+          </div>
+      
+          <div class="flex justify-between font-bold items-center">
+            <button type="submit" class="w-40 h-12 bg-primary text-white rounded-full border border-primary">Enviar
+              mensagem</button>
+            <div>
+              <button class="w-32 h-12 rounded-full border border-primary text-green-500" href="#">WhatsApp <i
+                  class="fa-brands fa-whatsapp text-2xl text-green-500"></i></button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
     <!-- fim section contato -->
