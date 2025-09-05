@@ -16,15 +16,16 @@
 
   <!-- Header/Navigation -->
   <header class="bg-secondary flex-col shadow-md fixed w-full top-0 z-50">
-      <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div class="flex mx-auto text-center md:mx-0 flex-col">
-              <span class="text-xl font-bold text-black">Dra. Franciely Brito B. Silva </span>
-              <span class="text-sm text-gray-600">Psicóloga Infantil — CRP 00/00000</span>
+    <div class="container md:max-w-7xl mx-auto">
+      <nav class="p-4 flex justify-between items-center">
+          <div class="flex mx-auto text-center md:text-start md:mx-0 md:items-start flex-col">
+              <span class="text-3xl md:text-2xl lg:text-4xl font-bold text-primary">Franciely Brito B. Silva </span>
+              <span class="text-base md:text-sm lg:text-xl text-gray-600">Psicóloga Infantil — CRP 00/00000</span>
           </div>
           
-          <div class="hidden md:flex space-x-8">
+          <div class="hidden md:flex space-x-2 w-3/5 text-primary">
               <a href="#sobre" class="btn-link-nav">Sobre</a>
-              <a href="#formacao" class="btn-link-nav">Formação e Experiência</a>
+              <a href="#formacao" class="btn-link-nav whitespace-nowrap">Formação e Experiência</a>
               <a href="#areas" class="btn-link-nav">Áreas</a>
               <a href="#contato" class="btn-link-nav">Contato</a>
           </div>
@@ -43,40 +44,41 @@
               <a href="#contato" class="btn-link-nav">Contato</a>
           </div>
       </div>
+    </div>
   </header>
 
   <!-- Main -->
-  <main class="container mx-auto mt-32">
+  <main class="container md:max-w-7xl mx-auto mt-32">
     <!-- Div introdução main -->
-    <div class="md:flex">
-      <div class="flex flex-col text-center">
-        <h1 class="text-3xl font-playfair font-bold mx-4 mt-3">Cuidado e acolhimento para crianças e famílias</h1>
-        <p class="mx-4 mt-4">Psicóloga com formação e experiência prática no atendimento de crianças autistas, utilizando estratégias baseadas em ABA, e apoio em ambiente escolar. Acredito firmemente na importância da parceria entre família, escola e profissionais de saúde para o desenvolvimento pleno da criança.</p>
+    <div class="md:flex md:p-2 justify-between">
+      <div class="flex flex-col text-center justify-between md:w-3/5">
+        <h1 class="text-3xl font-playfair font-bold mx-4 mt-3 md:text-6xl">Cuidado e acolhimento para crianças e famílias</h1>
+        <p class="mx-4 mt-4 md:text-2xl md:mx-9">Psicóloga com formação e experiência prática no atendimento de crianças autistas, utilizando estratégias baseadas em ABA, e apoio em ambiente escolar. Acredito firmemente na importância da parceria entre família, escola e profissionais de saúde para o desenvolvimento pleno da criança.</p>
 
-        <div class="text-primary flex gap-2 justify-center font-semibold text-[10px] mt-2">
-          <span class="bg-secondary rounded-full py-0.5 px-1.5">ABA</span>
-          <span class="bg-secondary rounded-full py-0.5 px-1.5">Acompanhamento Terapêutico</span>
-          <span class="bg-secondary rounded-full py-0.5 px-1.5">TEA</span>
-          <span class="bg-secondary rounded-full py-0.5 px-1.5">Psicologia Infantil</span>
+        <div class="text-primary flex gap-2 justify-center font-semibold text-[10px] mt-2 md:text-xl">
+          <span class="tags-span-main md:py-1.5 md:px-2.5">ABA</span>
+          <span class="tags-span-main md:py-1.5 md:px-2.5">Acompanhamento Terapêutico</span>
+          <span class="tags-span-main md:py-1.5 md:px-2.5">TEA</span>
+          <span class="tags-span-main md:py-1.5 md:px-2.5">Psicologia Infantil</span>
         </div>
 
-        <div class="mt-4 mx-auto">
-          <a class="p-1.5 rounded-full border border-primary flex items-center gap-1 font-semibold text-primary hover:underline" href="#"><img class="w-6" src="src/img/arrow-down-circle.png" alt="Download CV">Currículo</a>
+        <div class="mt-4 mx-auto ">
+          <a class="p-1 rounded-full border border-primary flex items-center gap-1 font-semibold text-primary md:p-2 md:text-3xl" href="#"><i class="fa-solid fa-circle-down text-2xl md:text-4xl"></i>Currículo</a>
         </div>
       </div>
 
-      <div class="hidden">
-        <img src="" alt="foto-apresentação">
+      <div class="hidden md:flex">
+        <img src="src/img/FOTO AQUI_MD.png" alt="foto-apresentação">
       </div>
     </div> <!-- Fim Div introdução main -->
 
 
     <!-- section sobre mim -->
-    <section class="m-4 mt-10 scroll-mt-24" id="sobre">
-      <h1 class="mb-3 font-playfair font-bold text-3xl leading-normal">Sobre mim</h1>
-      <div class="bg-white pb-4 px-6 rounded-md text-center md:flex">
-        <img class="w-32 py-4 mx-auto" src="src/img/FOTO AQUI.png" alt="photo-perfil">
-        <p class="">Psicóloga com experiência em atendimento infantil e prática em intervenção comportamental para crianças dentro do espectro autista (TEA) e outros transtornos do neurodesenvolvimento. Atuei como Aplicadora de ABA e Acompanhante Terapêutica, desenvolvendo habilidades essenciais na implementação de planos de intervenção individualizados, manejo de comportamentos e generalização de habilidades em contextos naturais, como domiciliar e escolar.</p>
+    <section class="m-4 mt-24 scroll-mt-24" id="sobre">
+      <h1 class="mb-3 font-playfair font-bold text-3xl leading-normal md:text-6xl md:mb-6">Sobre mim</h1>
+      <div class="bg-white pb-4 px-6 rounded-md text-center md:flex md:p-20 md:gap-8 md:items-center">
+        <img class="w-80" src="src/img/FOTO AQUI.png" alt="photo-perfil">
+        <p class="md:text-2xl px-10">Psicóloga com experiência em atendimento infantil e prática em intervenção comportamental para crianças dentro do espectro autista (TEA) e outros transtornos do neurodesenvolvimento. Atuei como Aplicadora de ABA e Acompanhante Terapêutica, desenvolvendo habilidades essenciais na implementação de planos de intervenção individualizados, manejo de comportamentos e generalização de habilidades em contextos naturais, como domiciliar e escolar.</p>
       </div>
     </section>
     <!-- fim section sobre mim -->

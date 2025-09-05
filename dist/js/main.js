@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOMContentLoaded -> iniciando script de navegação');
-
   const menuButton = document.querySelector('.mobile-menu-button');
   const mobileMenu = document.querySelector('.mobile-menu');
   const navLinks = Array.from(document.querySelectorAll('.btn-link-nav'));
