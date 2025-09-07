@@ -15,28 +15,28 @@
 <body class="font-lato bg-gray-100 text-gray-900">
 
   <!-- Header/Navigation -->
-  <header class="bg-secondary flex-col shadow-md fixed w-full top-0 z-50">
+  <header class="bg-secondary text-primary flex-col shadow-md fixed w-full top-0 z-50">
     <div class="container md:max-w-7xl mx-auto">
       <nav class="p-4 flex justify-between items-center">
           <div class="flex mx-auto text-center md:text-start md:mx-0 md:items-start flex-col">
-              <span class="text-3xl md:text-2xl lg:text-4xl font-bold text-primary">Franciely Brito B. Silva </span>
-              <span class="text-base md:text-sm lg:text-xl text-gray-600">Psicóloga Infantil — CRP 00/00000</span>
+              <span class="text-3xl md:text-2xl lg:text-4xl font-bold">Franciely Brito B. Silva </span>
+              <span class="text-base md:text-sm lg:text-xl text-primary/65">Psicóloga Infantil — CRP 00/00000</span>
           </div>
           
-          <div class="hidden md:flex space-x-2 md:w-3/5 text-primary">
+          <div class="hidden md:flex space-x-2 md:w-3/5">
               <a href="#sobre" class="btn-link-nav">Sobre</a>
               <a href="#formacao" class="btn-link-nav whitespace-nowrap">Formação e Experiência</a>
               <a href="#areas" class="btn-link-nav">Áreas</a>
               <a href="#contato" class="btn-link-nav">Contato</a>
           </div>
       </nav>
-      <button class="md:hidden bg-white rounded-full py-1 px-4 mb-3 ml-3 flex gap-2 text-primary mobile-menu-button">
+      <button class="md:hidden border border-primary rounded-full py-1 px-4 mb-3 ml-3 flex gap-2 mobile-menu-button">
           <i class="fas fa-bars text-xl"></i>
           <h1 class="text-xl font-bold uppercase ">Menu</h1>
       </button>
       
       <!-- Mobile Menu -->
-      <div class="mobile-menu hidden ml-3 text-primary font-bold uppercase py-1 px-4 shadow-lg">
+      <div class="mobile-menu hidden ml-3 font-bold uppercase py-1 px-4 shadow-lg">
           <div class="flex flex-col space-y-1">
               <a href="#sobre" class="btn-link-nav">Sobre</a>
               <a href="#formacao" class="btn-link-nav">Formação e Experiência</a>
@@ -48,7 +48,7 @@
   </header>
 
   <!-- Main -->
-  <main class="container md:max-w-7xl mx-auto mt-36">
+  <main class="container md:max-w-7xl mx-auto mt-36" id="main">
     <!-- Div introdução main -->
     <div class="md:flex md:p-2 pt-8 md:pt-14 justify-between">
       <div class="flex flex-col text-center justify-between md:w-3/5">
@@ -319,7 +319,14 @@
 
   </main>
 
-  <div id="footer"></div>
+  <div class="bg-secondary text-primary py-8" id="footer">
+    <div class="container mx-auto px-4 text-center">
+        <p>© 2025 Psicóloga Franciely Brito Borges Silva. Todos os direitos reservados.</p>
+        <p class="mt-2">CRP 00/00000</p>
+        <p class="mt-2">Desenvolvido por <a class="underline" href="#" target="_blank" rel="noopener noreferrer">Miguel jr.</a></p>
+    </div>
+
+  </div>
 
   <script src="dist/js/main.js"></script>
 </body>

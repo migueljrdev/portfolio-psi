@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const onScroll = throttle(() => {
     const pos = window.scrollY + headerH + 20;
-    let currentId = sections[0].id; // padrão: primeira section
+    let currentId = null; //  // começa sem ativo
 
     // procura a section mais "profunda" cujo topo já passou
     for (const sec of sections) {
