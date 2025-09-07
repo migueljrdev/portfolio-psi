@@ -114,3 +114,45 @@ document.addEventListener('DOMContentLoaded', () => {
   // chamada inicial para marcar ativo ao carregar
   onScroll();
 });
+
+//emailJS
+emailjs.init("aw88f4YY0LSD33IeW");
+document.getElementById("contact_form").addEventListener("submit", function(event){
+  event.preventDefault();
+
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value
+  }
+
+  const serviceID = "service_yjyo7mi";
+  const templateID = "template_asm84im";
+  const submitButton = document.getElementById("submit_button")
+  submitButton.textContent = "Enviando...";
+  submitButton.disabled = true;
+
+  emailjs.send(serviceID, templateID, formData).then(() =>{
+    Toastify({
+        text: "E-mail enviado com sucesso!",
+        style: {
+          background: "#28a745",
+          color: "f4f4f4"
+    },
+    }).showToast();
+
+    document.getElementById("contact_form").reset();
+  }).catch((error) => {
+    Toastify({
+        text: "Erro ao enviar o e-mail!",
+        style: {
+          background: "#dc3545",
+          color: "f4f4f4"
+    },
+    }).showToast();
+  }).finally(()=>{
+    submitButton.textContent = "Enviar mensagem";
+    submitButton.disabled = false;
+  })
+});

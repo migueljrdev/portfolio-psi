@@ -10,17 +10,19 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="dist/css/style.css" />
 </head>
-<body class="font-lato bg-gray-100 text-gray-900">
+<body class="font-lato bg-custom-gradient-body bg-blend-screen bg-fixed text-gray-900">
 
   <!-- Header/Navigation -->
-  <header class="bg-secondary text-primary flex-col shadow-md fixed w-full top-0 z-50">
+  <header class="bg-custom-gradient-body text-primary flex-col shadow-md fixed w-full top-0 z-50">
     <div class="container md:max-w-7xl mx-auto">
       <nav class="p-4 flex justify-between items-center">
           <div class="flex mx-auto text-center md:text-start md:mx-0 md:items-start flex-col">
               <span class="text-3xl md:text-2xl lg:text-4xl font-bold">Franciely Brito B. Silva </span>
-              <span class="text-base md:text-sm lg:text-xl text-primary/65">Psicóloga Infantil — CRP 00/00000</span>
+              <span class="text-base md:text-sm lg:text-xl text-primary/65">Psicóloga Infantil — CRP 06/222408</span>
           </div>
           
           <div class="hidden md:flex space-x-2 md:w-3/5">
@@ -270,11 +272,11 @@
             </div>
         
             <div class="flex justify-between font-bold items-center gap-3">
-              <button type="submit"
+              <button type="submit" id="submit_button"
                 class="w-1/2 h-12 bg-primary text-white rounded-full border border-primary hover:bg-primary/80 transition">
                 Enviar mensagem
               </button>
-              <a href="https://wa.me/seunumero" target="_blank"
+              <a href="https://wa.me/+5511952994130" target="_blank"
                 class="w-1/2 md:w-2/5 h-12 flex items-center justify-center gap-2 rounded-full border border-green-500 text-green-600 font-semibold hover:bg-green-50 transition">
                 WhatsApp <i class="fa-brands fa-whatsapp text-2xl"></i>
               </a>
@@ -283,32 +285,39 @@
         </div>
 
         <!-- Card Contatos (altura só do conteúdo) -->
-        <div class="bg-white py-6 px-6 flex flex-col gap-8 rounded-md shadow-md text-primary md:w-80">
+        <div class="bg-white py-6 px-6 flex flex-col gap-8 rounded-md shadow-md text-primary md:w-2/5">
           
           <!-- E-mail -->
-          <div class="flex flex-col gap-1">
-            <div class="flex items-center gap-2">
-              <i class="fa-regular fa-envelope text-3xl"></i>
-              <span class="text-2xl font-bold">E-mail</span>
+          <div class="flex items-center gap-3">
+            <i class="fa-regular fa-envelope text-4xl"></i>
+            <div class="flex flex-col">
+              <span class="text-xl font-bold">E-mail</span>
+              <a class="underline text-primary/65 hover:text-primary transition" href="mailto:meuemail@gmail.com">
+                meuemail@gmail.com
+              </a>
             </div>
-            <a class="underline text-lg text-gray-700 hover:text-primary transition" href="mailto:meuemail@gmail.com">
-              meuemail@gmail.com
-            </a>
+          </div>
+          <div class="flex items-center gap-5">
+            <i class="fa-solid fa-location-dot text-4xl"></i>
+            <div class="flex flex-col">
+              <span class="text-xl font-bold">Localização</span>
+              <p class="text-primary/65">São paulo - SP</p>
+            </div>
           </div>
 
           <!-- Redes -->
-          <div class="flex flex-col gap-2">
-            <div class="flex items-center gap-2">
-              <i class="fa-solid fa-rss text-3xl"></i>
-              <span class="text-2xl font-bold">Redes</span>
-            </div>
-            <div class="flex gap-5 mt-1">
-              <a href="#" target="_blank" class="hover:text-pink-500 transition">
-                <i class="fa-brands fa-instagram text-4xl"></i>
-              </a>
-              <a href="#" target="_blank" class="hover:text-blue-600 transition">
-                <i class="fa-brands fa-linkedin-in text-4xl"></i>
-              </a>
+          <div class="flex gap-4  ">
+            <i class="fa-solid fa-rss text-4xl"></i>
+            <div class="flex flex-col gap-1">
+              <span class="text-xl font-bold">Redes</span>
+              <div class="flex gap-4 mt-1">
+                <a href="#" target="_blank" class="hover:text-pink-400 text-pink-700 transition">
+                  <i class="fa-brands fa-instagram text-4xl"></i>
+                </a>
+                <a href="#" target="_blank" class="hover:text-blue-400 text-blue-700 transition">
+                  <i class="fa-brands fa-linkedin-in text-4xl"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -319,15 +328,16 @@
 
   </main>
 
-  <div class="bg-secondary text-primary py-8" id="footer">
+  <div class="bg-custom-gradient-body text-primary py-8" id="footer">
     <div class="container mx-auto px-4 text-center">
         <p>© 2025 Psicóloga Franciely Brito Borges Silva. Todos os direitos reservados.</p>
-        <p class="mt-2">CRP 00/00000</p>
-        <p class="mt-2">Desenvolvido por <a class="underline" href="#" target="_blank" rel="noopener noreferrer">Miguel jr.</a></p>
+        <p class="mt-2">CRP 06/222408</p>
+        <p class="mt-2">Desenvolvido por <a class="underline" href="https://migueljrdev.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Miguel jr.</a></p>
     </div>
 
   </div>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="dist/js/main.js"></script>
 </body>
 </html>
