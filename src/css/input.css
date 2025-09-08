@@ -25,3 +25,15 @@
 .tags-span-main {
   @apply bg-secondary rounded-full py-0.5 px-1.5;
 }
+
+/*animation load scroll*/
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -113,6 +113,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // chamada inicial para marcar ativo ao carregar
   onScroll();
+
+  //animation scroll section
+  function animateOnScroll() {
+      const elements = document.querySelectorAll('.fade-in');
+      
+      elements.forEach(element => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+          
+          if (elementPosition < screenPosition) {
+              element.classList.add('visible');
+          }
+      });
+  }
+  
+  // Initialize animation on load and scroll
+  window.addEventListener('load', animateOnScroll);
+  window.addEventListener('scroll', animateOnScroll);
 });
 
 //emailJS
