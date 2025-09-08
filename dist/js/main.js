@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = Array.from(document.querySelectorAll('.btn-link-nav'));
   const header = document.querySelector('header');
   let headerH = header ? header.offsetHeight : 0;
+  let lastScroll = 0;
 
   // Atualiza altura do header ao redimensionar
   window.addEventListener('resize', () => {
@@ -58,6 +59,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
   }
+  
+  // Detecta scroll (esconde header no mobile)
+  window.addEventListener("scroll", () => {
+    const menuOpen = mobileMenu && !mobileMenu.classList.contains("hidden");
+
+    if (window.innerWidth <= 768 && !menuOpen) {
+      let currentScroll = window.scrollY;
+
+      if (currentScroll > lastScroll) {
+        // rolando para baixo → esconder
+        header.style.transform = "translateY(-100%)";
+      } else {
+        // rolando para cima → mostrar
+        header.style.transform = "translateY(0)";
+      }
+
+      lastScroll = currentScroll;
+    } else {
+      // desktop ou menu aberto → sempre visível
+      header.style.transform = "translateY(0)";
+    }
+  });
 
   // --- SCROLL SUAVE ao clicar nos links ---
   navLinks.forEach(link => {

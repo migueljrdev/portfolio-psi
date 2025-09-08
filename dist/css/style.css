@@ -588,10 +588,6 @@ video {
   }
 }
 
-.visible {
-  visibility: visible;
-}
-
 .fixed {
   position: fixed;
 }
@@ -838,22 +834,18 @@ video {
   background-color: rgb(84 4 130 / var(--tw-bg-opacity, 1));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(252 215 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-custom-gradient-body {
-  background-image: radial-gradient(circle, #FFE7FF, #fff5ff, #fff6ff, #fff6ff, #fff6ff);;
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-custom-gradient {
-  background-image: linear-gradient(to bottom, #e2bef4, #e3cdf7, #e7dbf8, #ede9f8, #f6f6f6);;
+.bg-custom-gradient-body {
+  background-image: radial-gradient(circle, #FFE7FF, #fff5ff, #fff6ff, #fff6ff, #fff6ff);;
 }
 
 .bg-fixed {
@@ -1048,6 +1040,16 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 /* input.css */
