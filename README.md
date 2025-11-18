@@ -25,6 +25,7 @@ apresentar serviços de forma moderna.
 
 -   **HTML5** - Estrutura semântica moderna
 -   **Tailwind CSS** - Estilização avançada com responsividade
+-   **Figma** - Criação do designer
 -   **JavaScript** - Interatividade e funcionalidades dinâmicas
 -   **Google Fonts** - Tipografia profissional
 -   **Font Awesome** - Ícones vetoriais
