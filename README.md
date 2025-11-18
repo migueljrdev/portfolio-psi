@@ -27,5 +27,6 @@ apresentar serviços de forma moderna.
 -   **Tailwind CSS** - Estilização avançada com responsividade
 -   **Figma** - Criação do designer
 -   **JavaScript** - Interatividade e funcionalidades dinâmicas
+-   **Email JS** - Tecnologia utilizada no formulário 
 -   **Google Fonts** - Tipografia profissional
 -   **Font Awesome** - Ícones vetoriais
